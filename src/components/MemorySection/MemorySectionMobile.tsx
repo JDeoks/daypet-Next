@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import memoryPreviewImage from '@/../public/images/memoryPreviewImage.png';
+import memoryPreviewImage from '@/../../public/images/memoryPreviewImage.png';
 
-export default function MemorySection() {
+export default function MemorySectionMobile() {
     return (
         <>
             <div className="bg-mainBackground flex justify-center h-800">
-                <div className="flex w-900 justify-center">
-                    <div className="flex justify-center w-400">
+                <div className="flex flex-col justify-center">
+                    <div className="flex justify-center w-220">
                         <Image
                             src={memoryPreviewImage}
                             alt=""
@@ -15,12 +15,12 @@ export default function MemorySection() {
                         />
                     </div>
 
-                    <div className="flex flex-col justify-center gap-4 w-400">
-                        <p className="text-3xl font-semibold text-right whitespace-pre-line">
+                    <div className="flex flex-col justify-center gap-4 pt-16">
+                        <p className="text-3xl font-semibold text-center whitespace-pre-line">
                             우리가족의 기억을 <br />
                             간직해요
                         </p>
-                        <p className="text-1xl text- font-medium text-subText text-right whitespace-pre-line">
+                        <p className="text-1xl text- font-medium text-subText text-center whitespace-pre-line">
                             데이펫은 소중한 반려동물의 일상을
                             <br />
                             기록하고 공유하는 앱입니다. <br />
