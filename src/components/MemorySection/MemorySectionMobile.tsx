@@ -6,11 +6,13 @@ export default function MemorySectionMobile() {
         <>
             <div className="bg-mainBackground flex justify-center h-800">
                 <div className="flex flex-col justify-center">
-                    <div className="flex justify-center w-220">
+                    <div className="flex justify-center">
                         <Image
                             src={memoryPreviewImage}
                             alt=""
                             className="object-contain"
+                            width={220}
+
                             // height={400}
                         />
                     </div>

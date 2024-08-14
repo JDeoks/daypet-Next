@@ -9,7 +9,9 @@ import MemorySectionMobile from '@/components/MemorySection/MemorySectionMobile'
 
 import ShareTodoSection from '@/components/ShareTodoSection/ShareTodoSection';
 import ShareTodoSectionMobile from '@/components/ShareTodoSection/ShareTodoSectionMobile';
-import AlbumSection from '@/components/AlbumSection';
+import AlbumSection from '@/components/AlbumSection/AlbumSection';
+import AlbumSectionMobile from '@/components/AlbumSection/AlbumSectionMobile';
+
 import Header from '@/components/Header';
 import { useMediaQuery } from 'react-responsive';
 
@@ -28,7 +30,7 @@ export default function Home() {
                 </div>
                 {isMobile ? <MemorySectionMobile /> : <MemorySection />}
                 {isMobile ? <ShareTodoSectionMobile /> : <ShareTodoSection />}
-                <AlbumSection />
+                {isMobile ? <AlbumSectionMobile /> : <AlbumSection />}
             </div>
         </>
     );
