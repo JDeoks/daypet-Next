@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import memoryPreviewImage from '@/../../public/images/memoryPreviewImage.png';
+import shareTodoPreviewImage from '@/../public/images/shareTodoPreviewImage.svg';
 
-export default function MemorySectionMobile() {
+export default function ShareTodoSectionMobile() {
     return (
         <>
-            <div className="bg-mainBackground flex justify-center h-800">
+            <div className="bg-buttonShape flex justify-center h-800">
                 <div className="flex flex-col justify-center">
                     <div className="flex justify-center w-220">
                         <Image
-                            src={memoryPreviewImage}
+                            src={shareTodoPreviewImage}
                             alt=""
                             className="object-contain"
                             // height={400}
@@ -17,17 +17,16 @@ export default function MemorySectionMobile() {
 
                     <div className="flex flex-col justify-center gap-4 pt-16">
                         <p className="text-2xl font-semibold text-center whitespace-pre-line">
-                            우리 가족의 기억을 <br />
-                            간직해요
+                            실시간 할 일 공유
                         </p>
                         <p className="text-1xl text- font-medium text-subText text-center whitespace-pre-line">
-                            데이펫은 소중한 반려동물의 일상을
+                            더 이상 밥은 줬는지, 산책은 했는지
                             <br />
-                            기록하고 공유하는 앱입니다. <br />
+                            물어볼 필요가 없어요. <br />
                             <br />
-                            매일매일 우리 아이의 특별한 순간을
+                            산책, 식사, 약 먹이기 등 중요한 할 일을
                             <br />
-                            놓치지 않고 기록해보세요.
+                            가족들과 실시간으로 공유하세요.
                         </p>
                     </div>
                 </div>

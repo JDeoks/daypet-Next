@@ -17,7 +17,7 @@ export default function MemorySection() {
 
                     <div className="flex flex-col justify-center gap-4 w-400">
                         <p className="text-3xl font-semibold text-right whitespace-pre-line">
-                            우리가족의 기억을 <br />
+                            우리 가족의 기억을 <br />
                             간직해요
                         </p>
                         <p className="text-1xl text- font-medium text-subText text-right whitespace-pre-line">
