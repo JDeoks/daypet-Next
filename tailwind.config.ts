@@ -1,5 +1,13 @@
 import type { Config } from 'tailwindcss';
 
+const generateSpacingScale = (): { [key: string]: string } => {
+    const scale: { [key: string]: string } = {};
+    for (let i = 10; i <= 1000; i += 10) {
+        scale[i.toString()] = `${i}px`;
+    }
+    return scale;
+};
+
 const config: Config = {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,16 +21,8 @@ const config: Config = {
                 'gradient-conic':
                     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
-            width: {
-                '400': '400px',
-                '900': '900px',
-            },
-            height: {
-                '400': '400px',
-                '800': '800px',
-                '700': '700px',
-                '900': '900px',
-            },
+            width: generateSpacingScale(),
+            height: generateSpacingScale(),
             margin: {
                 '25': '100px',
             },
