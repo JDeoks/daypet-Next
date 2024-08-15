@@ -16,6 +16,8 @@ import ProfileSection from '@/components/ProfileSection/ProfileSection';
 import ProfileSectionMobile from '@/components/ProfileSection/ProfileSectionMobile';
 
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
 import { useMediaQuery } from 'react-responsive';
 
 export default function Home() {
@@ -24,7 +26,6 @@ export default function Home() {
     return (
         <>
             <div>
-                {/* 헤더 */}
                 <Header />
                 <div className="bg-buttonShape">
                     <div className="pt-16">
@@ -35,6 +36,7 @@ export default function Home() {
                 {isMobile ? <ShareTodoSectionMobile /> : <ShareTodoSection />}
                 {isMobile ? <AlbumSectionMobile /> : <AlbumSection />}
                 {isMobile ? <ProfileSectionMobile /> : <ProfileSection />}
+                <Footer />
             </div>
         </>
     );
