@@ -20,7 +20,7 @@ export default function ShareTodoSection() {
                             가족들과 실시간으로 공유하세요.
                         </p>
                     </div>
-                    <div className="flex justify-center w-400">
+                    <div className="flex flex-col justify-center w-400">
                         <Image
                             src={shareTodoPreviewImage}
                             alt=""

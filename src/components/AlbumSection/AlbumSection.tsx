@@ -6,12 +6,12 @@ export default function AlbumSection() {
         <>
             <div className="bg-primaryBackground flex justify-center h-800">
                 <div className="flex w-900 justify-center">
-                    <div className="flex justify-center w-400">
+                    <div className="flex flex-col justify-center w-400">
                         <Image
                             src={albumPreviewImage}
                             alt=""
                             className="object-contain"
-                            // height={400}
+                            width={300}
                         />
                     </div>
 

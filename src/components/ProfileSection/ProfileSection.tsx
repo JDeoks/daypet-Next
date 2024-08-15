@@ -23,12 +23,12 @@ export default function ProfileSection() {
                             <Image src={appStoreButton} alt="" />
                         </div>
                     </div>
-                    <div className="flex justify-center w-400">
+                    <div className="flex flex-col justify-center items-end w-400">
                         <Image
                             src={profilePreviewImage}
                             alt=""
                             className="object-contain"
-                            // height={400}
+                            width={300}
                         />
                     </div>
                 </div>

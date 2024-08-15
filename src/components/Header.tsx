@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import navBarAppIcon from '@/../public/images/navBarAppIcon.svg';
 
-export default function MainSection() {
+export default function Header() {
     return (
         <>
             <div className="fixed left-0 top-0 right-0 shadow h-16 flex justify-center bg-white">
