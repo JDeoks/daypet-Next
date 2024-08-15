@@ -12,6 +12,9 @@ import ShareTodoSectionMobile from '@/components/ShareTodoSection/ShareTodoSecti
 import AlbumSection from '@/components/AlbumSection/AlbumSection';
 import AlbumSectionMobile from '@/components/AlbumSection/AlbumSectionMobile';
 
+import ProfileSection from '@/components/ProfileSection/ProfileSection';
+import ProfileSectionMobile from '@/components/ProfileSection/ProfileSectionMobile';
+
 import Header from '@/components/Header';
 import { useMediaQuery } from 'react-responsive';
 
@@ -31,6 +34,7 @@ export default function Home() {
                 {isMobile ? <MemorySectionMobile /> : <MemorySection />}
                 {isMobile ? <ShareTodoSectionMobile /> : <ShareTodoSection />}
                 {isMobile ? <AlbumSectionMobile /> : <AlbumSection />}
+                {isMobile ? <ProfileSectionMobile /> : <ProfileSection />}
             </div>
         </>
     );
