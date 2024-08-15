@@ -18,6 +18,8 @@ import ProfileSectionMobile from '@/components/ProfileSection/ProfileSectionMobi
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+import { Analytics } from '@vercel/analytics/react';
+
 import { useMediaQuery } from 'react-responsive';
 
 export default function Home() {
@@ -37,6 +39,7 @@ export default function Home() {
                 {isMobile ? <AlbumSectionMobile /> : <AlbumSection />}
                 {isMobile ? <ProfileSectionMobile /> : <ProfileSection />}
                 <Footer />
+                <Analytics />
             </div>
         </>
     );

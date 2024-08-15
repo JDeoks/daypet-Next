@@ -8,7 +8,7 @@ export default function ProfileSectionMobile() {
         <>
             <div className="bg-buttonShape flex justify-center h-800">
                 <div className="flex flex-col justify-center">
-                    <div className="flex justify-center w-400">
+                    <div className="flex justify-center">
                         <Image
                             src={profilePreviewImage}
                             alt=""
